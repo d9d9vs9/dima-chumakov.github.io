@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0">
+    <link rel="canonical" href="konstantin-kukushkin.com">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <title>Home - Konstantin Kukushkin : Konstantin Kukushkin</title>
+    <meta name="description" content="">
+
+    <meta name="google" value="notranslate">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="w3-bar w3-black">
+        <a href="#home" id="home_button" class="w3-button w3-bar-item">Home</a>
+        <a href="#music" id="music_button" class="w3-button w3-bar-item">Music</a>
+        <a href="#video" id="video_button" class="w3-button w3-bar-item">Video</a>
+        <a href="#photo" id="photo_button" class="w3-button w3-bar-item">Photo</a>
+        <a href="#live" id="live_button" class="w3-button w3-bar-item">Live</a>
+        <a href="#contact" id="contact_button" class="w3-button w3-bar-item">Contact</a>
+    </nav>
+
+    <!-- Slide Show -->
+    <section>
+        <img class="mySlides" src="./Assets/img_band_la.jpg"
+             style="width:100%">
+        <img class="mySlides" src="./Assets/img_band_ny.jpg"
+             style="width:100%">
+        <img class="mySlides" src="./Assets/img_band_chicago.jpg"
+             style="width:100%">
+    </section>
+
+    <!-- Band Description -->
+    <section class="w3-container w3-center w3-content" style="max-width:600px">
+        <h2 class="w3-wide">Konstantin Kukushkin</h2>
+        <p class="w3-opacity"><i>I love music</i></p>
+        <p class="w3-justify">I have created a fictional website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+
+    <!-- Band Members -->
+    <section class="w3-row-padding w3-center w3-light-grey">
+        <article class="w3-third">
+            <p>Konstantin Kukushkin</p>
+            <img src="./Assets/Konstantin_Kukushkin.jpg" alt="Random Name" style="width:100%">
+            <p>Konstantin Kukushkin is the smartest.</p>
+        </article>
+        <article class="w3-third">
+            <p>Konstantin Kukushkin</p>
+            <img src="./Assets/img_bandmember.jpg" alt="Random Name" style="width:100%">
+            <p>Konstantin Kukushkin is the prettiest.</p>
+        </article>
+        <article class="w3-third">
+            <p>Konstantin Kukushkin</p>
+            <img src="./Assets/img_bandmember.jpg" alt="Random Name" style="width:100%">
+            <p>Konstantin Kukushkin is the funniest.</p>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <a href="http://facebook.com/xkostyakot"><i class="fa fa-facebook-official"></i></a>
+        <a href="https://www.instagram.com/konstantinkukushkin/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/user/kukushkaKOT"><i class="fa fa-youtube"></i></a>
+        <p class="w3-medium">
+            Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+        </p>
+    </footer>
+
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+
+    <script type="text/javascript">
+        document.getElementById("home_button").onclick = function () {
+            location.href = "home.html";
+        };
+        document.getElementById("music_button").onclick = function () {
+            location.href = "music.html";
+        };
+        document.getElementById("live_button").onclick = function () {
+            location.href = "live.html";
+        };
+        document.getElementById("photo_button").onclick = function () {
+            location.href = "photo.html";
+        };
+        document.getElementById("video_button").onclick = function () {
+            location.href = "video.html";
+        };
+        document.getElementById("contact_button").onclick = function () {
+            location.href = "contact.html";
+        };
+    </script>
+
+</body>
+</html>
